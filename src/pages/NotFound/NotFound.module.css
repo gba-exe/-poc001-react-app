@@ -1,0 +1,25 @@
+* {
+    color: #000000;
+}
+
+:global(.content) {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+    
+    height: 90vh;
+}
+
+.numeros {
+    font-size: 200px;
+    font-weight: 150;
+
+    margin: 0;
+}
+
+:global(.content h1) {
+    font-size: 50px;
+    font-weight: 150;
+}
