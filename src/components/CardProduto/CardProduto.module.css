@@ -1,0 +1,19 @@
+.card-produto {
+  padding: 16px 32px;
+  width: 20vw;
+  height: 50vh;
+
+  border-radius: 10px;
+  box-shadow: 8px 8px 20px #c2c2c2;
+}
+
+.botao-ver-mais {
+  border-radius: 10px;
+  background-color: #f4811f;
+  color: white;
+}
+
+.botao-ver-mais:hover {
+  background-color: #f4943f;
+  transition-duration: 200ms;
+}

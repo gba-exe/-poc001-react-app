@@ -1,9 +1,8 @@
-* {
-    color: white;
-}
+.linha-produto {
+    width: 100%;
+    height: auto;
 
-.imagem-header {
-    width: 100vw;
-    height: 80vh;
-    object-fit: cover;
+    display: flex;
+    justify-content: flex-start;
+    gap: 24px;
 }

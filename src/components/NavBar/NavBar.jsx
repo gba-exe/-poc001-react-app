@@ -2,32 +2,32 @@ import React from "react";
 import styles from "./NavBar.module.css";
 import { useNavigate } from "react-router-dom";
 
-const NavBar = () => {
+const NavBar = ({ logo }) => {
   const navigate = useNavigate();
   const login = () => {
-      navigate("/entrar");
-  }
+    navigate("/entrar");
+  };
   const signup = () => {
-      navigate("/cadastro");
-  }
+    navigate("/cadastro");
+  };
   const home = () => {
-      navigate("/");
-  }
-
+    navigate("/");
+  };
 
   return (
     <nav className={styles["navbar"]}>
-      <h1 className={styles["logo"]} onClick={home}>LOJA</h1>
-
+      <img
+        onClick={home}
+        src={logo}
+        className={styles["logo"]}
+        alt="Logo de loja"
+      />
       <div className={styles["botoes"]}>
-        <button
-          className={styles["botao-signup"]}
-          onClick={signup}
-        >
-          Cadastro
-        </button>
         <button className={styles["botao-login"]} onClick={login}>
           Entrar
+        </button>
+        <button className={styles["botao-signup"]} onClick={signup}>
+          Cadastro
         </button>
       </div>
     </nav>
